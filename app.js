@@ -52,7 +52,7 @@ app.set("etag", false);
 app.use("/api/v1", router);
 
 // Scaffolding with client-side
-app.use(express.static("client/dist"));
+app.use(express.static(path.join(__dirname, "/client/dist")));
 
 // Add React Front End Routing
 app.get("*", function (req, res) {

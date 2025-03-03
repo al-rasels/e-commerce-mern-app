@@ -35,7 +35,7 @@ const AppNavBar = () => {
             <div className="col-md-6">
               <span>
                 <span className="f-12">
-                  <i className="bi bi-envelope"></i> rm.shanto786@gmail.com
+                  <i className="bi bi-envelope"></i>store.techo@gmail.com
                 </span>
                 <span className="f-12 mx-2">
                   <i className="bi bi-envelope"></i> 01763788733

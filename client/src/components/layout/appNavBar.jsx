@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/plainb-logo.svg";
+import logo from "../../assets/images/techologo.png";
 import ProductStore from "../../store/ProductStore.js";
 import UserStore from "../../store/UserStore.js";
-// import UserSubmitButton from "../user/UserSubmitButton.jsx";
+
 import CartStore from "../../store/CartStore.js";
 import WishStore from "../../store/WishStore.js";
 import { useEffect } from "react";
@@ -88,7 +88,7 @@ const AppNavBar = () => {
           <div className="collapse navbar-collapse" id="nav06">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="btn ms-2 btn-light position-relative" to="/">
+                <Link className="btn ms-4 btn-light position-relative" to="/">
                   <i className="bi bi-house"></i> Home
                 </Link>
               </li>
@@ -109,7 +109,7 @@ const AppNavBar = () => {
                     <Link
                       to="/wish"
                       type="button"
-                      className="btn ms-2 btn-light position-relative">
+                      className="btn ms-4 btn-light position-relative">
                       <i className="bi text-dark bi-heart"></i> Wish
                       <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
                         {WishCount}
@@ -120,7 +120,7 @@ const AppNavBar = () => {
                     <Link
                       to="/orders"
                       type="button"
-                      className="btn ms-2 btn-light position-relative">
+                      className="btn ms-4 btn-light position-relative">
                       <i className="bi text-dark  bi-truck"></i> Order
                     </Link>
                   </li>
@@ -181,7 +181,7 @@ const AppNavBar = () => {
                   </Dropdown>
                 </div>
               ) : (
-                <Link type="button" className="btn ms-3 btn-light" to="/login">
+                <Link type="button" className="btn ms-4 btn-light" to="/login">
                   Login
                 </Link>
               )}

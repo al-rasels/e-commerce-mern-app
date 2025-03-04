@@ -18,7 +18,7 @@ Developed a dynamic and fully functional **MERN Stack E-Commerce Application** t
 🎯 **Outcome:**  
 Successfully built a **scalable and responsive** e-commerce platform with **secure authentication, real-time updates**, and a **user-friendly shopping experience**.  
 
-🔗 **Live Demo:** *[[<img src="https://github.com/al-rasels/techo-fullstack-mern-app/blob/main/Techo.png" >]](https://techo-on-live-app.onrender.com)*  
+🔗 **Live Demo:** *[<img src="https://github.com/al-rasels/techo-fullstack-mern-app/blob/main/Techo.png" >](https://techo-on-live-app.onrender.com)*  
 
 
 

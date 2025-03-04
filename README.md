@@ -18,8 +18,9 @@ Developed a dynamic and fully functional **MERN Stack E-Commerce Application** t
 🎯 **Outcome:**  
 Successfully built a **scalable and responsive** e-commerce platform with **secure authentication, real-time updates**, and a **user-friendly shopping experience**.  
 
-🔗 **GitHub Repository / Live Demo:** *(Add your project link here)*  
+🔗 **GitHub Repository / Live Demo:** *(https://techo-on-live-app.onrender.com)*  
 
+<img src="techo.png">
 ---
 
 This version is polished, professional, and LinkedIn-ready. Let me know if you'd like to tweak anything! 🚀

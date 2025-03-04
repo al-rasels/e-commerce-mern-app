@@ -121,13 +121,5 @@ router.get('/LegalDetails/:type', FeaturesController.LegalDetails)
 //Create Review
 router.post("/CreateReview", AuthVerification, ProductController.CreateReview);
 
-// this is a hotfix for sslcommerz successURL-redirect
-app.post('/orders', async (req, res) => {
-    res.redirect('https://techo-on-live-app.onrender.com/orders')
-});
-
-app.post('/cart', async (req, res) => {
-    res.redirect('https://techo-on-live-app.onrender.com/cart')
-});
 
 module.exports = router;

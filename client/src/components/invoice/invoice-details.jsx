@@ -46,8 +46,8 @@ const InvoiceDetails = () => {
     return <NoData />;
   } else {
     return (
-      <div className="container mt-3">
-        <div className="row">
+      <div className="container py-5 mt-3">
+        <div className="row my-5 py-5">
           <div className="col-md-12">
             <div className="card p-4">
               <ul className="list-group list-group-flush">

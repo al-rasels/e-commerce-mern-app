@@ -90,42 +90,53 @@ npm run dev
 
 The server will run on `http://localhost:8000`.
 
-## API Endpoints
+# **API Endpoints with Descriptions**  
 
-The API provides the following endpoints:
+## **1. Products**  
+- **GET** `/ProductBrandList` – Retrieve a list of all available product brands.  
+- **GET** `/ProductCategoryList` – Retrieve a list of all product categories.  
+- **GET** `/ProductSliderList` – Fetch featured products for the homepage slider.  
+- **GET** `/ProductListByBrand/:brandID` – Get products filtered by a specific brand.  
+- **GET** `/ProductListByCategory/:categoryID` – Get products filtered by a specific category.  
+- **GET** `/ProductListBySimilar/:categoryID` – Retrieve similar products based on category.  
+- **GET** `/ProductListByKeyword/:keyword` – Search products using keywords.  
+- **GET** `/ProductListByRemark/:remark` – Fetch products based on specific remarks (e.g., "new arrivals").  
+- **GET** `/ProductDetails/:productID` – Get detailed information about a specific product.  
+- **POST** `/ProductListByFilter` – Retrieve products filtered by brand, category, and price range.  
 
-- **User Routes**:
-  - `POST /api/users/register`: Register a new user.
-  - `POST /api/users/login`: Authenticate a user.
-  - `GET /api/users/profile`: Retrieve user profile (requires authentication).
+## **2. User Authentication & Profile**  
+- **GET** `/UserOTP/:email` – Send a one-time password (OTP) to the user’s email for authentication.  
+- **GET** `/VerifyLogin/:email/:otp` – Verify OTP and authenticate the user.  
+- **GET** `/UserLogout` – Log the user out of the system.  
+- **GET** `/ReadProfile` – Retrieve the user’s profile details.  
+- **POST** `/CreateProfile` – Create a new user profile with personal and shipping details.  
+- **POST** `/UpdateProfile` – Update the user’s profile information.  
 
-- **Product Routes**:
-  - `GET /api/products`: Retrieve all products.
-  - `GET /api/products/:id`: Retrieve a single product by ID.
-  - `POST /api/products`: Create a new product (admin only).
-  - `PUT /api/products/:id`: Update a product by ID (admin only).
-  - `DELETE /api/products/:id`: Delete a product by ID (admin only).
+## **3. Wishlist**  
+- **POST** `/SaveWishList` – Add a product to the user’s wishlist.  
+- **POST** `/RemoveWishList` – Remove a product from the wishlist.  
+- **GET** `/WishList` – Retrieve all items saved in the user’s wishlist.  
 
-- **Order Routes**:
-  - `POST /api/orders`: Create a new order.
-  - `GET /api/orders/:id`: Retrieve order by ID.
-  - `GET /api/orders/user/:userId`: Retrieve orders for a specific user.
-  - `PUT /api/orders/:id`: Update order status (admin only).
+## **4. Cart**  
+- **POST** `/SaveCartList` – Add a product to the shopping cart with quantity and other details.  
+- **POST** `/UpdateCartList/:cartID` – Update an item’s details in the cart (e.g., quantity, color, size).  
+- **POST** `/RemoveCartList` – Remove a product from the cart.  
+- **GET** `/CartList` – Retrieve all products currently in the cart.  
 
-- **Cart Routes**:
-  - `GET /api/cart`: Retrieve user's cart.
-  - `POST /api/cart`: Add item to cart.
-  - `PUT /api/cart/:itemId`: Update cart item quantity.
-  - `DELETE /api/cart/:itemId`: Remove item from cart.
+## **5. Orders & Invoices**  
+- **GET** `/CreateInvoice` – Generate an order invoice after checkout.  
+- **GET** `/InvoiceList` – Retrieve a list of all invoices for the user.  
+- **GET** `/InvoiceProductList/:invoiceID` – Get a list of products included in a specific invoice.  
 
-- **Wishlist Routes**:
-  - `GET /api/wishlist`: Retrieve user's wishlist.
-  - `POST /api/wishlist`: Add item to wishlist.
-  - `DELETE /api/wishlist/:itemId`: Remove item from wishlist.
+## **6. Features & Legal**  
+- **GET** `/FeaturesList` – Retrieve details about the app’s features.  
+- **GET** `/LegalDetails/:type` – Fetch legal information such as "how to buy" or return policies.  
 
-- **Review Routes**:
-  - `POST /api/products/:id/reviews`: Add a review to a product.
-  - `GET /api/products/:id/reviews`: Retrieve reviews for a product.
+## **7. Reviews**  
+- **POST** `/CreateReview` – Submit a review for a purchased product.  
+- **GET** `/ProductReviewList/:productID` – Retrieve all reviews for a specific product.  
+
+This structured list provides clear descriptions of each endpoint. Let me know if you need any modifications.
 
 For detailed information on request and response structures, refer to the API documentation or the source code.
 

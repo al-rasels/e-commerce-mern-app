@@ -20,7 +20,8 @@ Successfully built a **scalable and responsive** e-commerce platform with **secu
 
 🔗 **GitHub Repository / Live Demo:** *(https://techo-on-live-app.onrender.com)*  
 
-<img src="techo.png">
+[<img src="techo.png">](https://github.com/al-rasels/techo-fullstack-mern-app/blob/main/Techo.png)
+
 ---
 
 This version is polished, professional, and LinkedIn-ready. Let me know if you'd like to tweak anything! 🚀
